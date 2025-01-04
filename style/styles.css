@@ -1,0 +1,253 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header{
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0b5gqTaylvl66A-fNLn7M8ev5IpdPEl6emw&s') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+/* header .hero {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0b5gqTaylvl66A-fNLn7M8ev5IpdPEl6emw&s') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem;
+} */
+
+header .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+header .hero .btn {
+    background: #28a745;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h2 {
+    margin: 2rem 0 1rem;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    max-width: 300px;
+    border-radius: 5px;
+}
+.card:hover{
+    transition: all .5s ease-out;
+    transform: scale(1.1);
+}
+
+.card img {
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+.btn:hover {
+    transition: all .2s ease-in;
+   background-color: black;
+}
+
+#reviews{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.testimonial-container {
+    margin: auto;
+    width: 500px;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.testimonial {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.testimonial.active {
+    display: block;
+    opacity: 1;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.testimonial .author {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.controls button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+cite{
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+.input{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid green;
+    border-right: 2px solid green;
+    margin: 5px;
+    outline: none;
+    display: block;
+    width: 80%;
+    border-radius: 4px;
+    height: 30px;
+}
+
+.textarea{
+    height: 70px;
+}
+
+#sbtm{
+    width: 80px;
+    margin-top: 12px;
+}
+
+
+#contact{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-image: url('https://media.istockphoto.com/id/1283120630/photo/portrait-of-focused-woman-in-headphones-taking-part-in-webinar-in-office.jpg?s=612x612&w=0&k=20&c=CrbsFsluBfo8qrZ3S6dLLbw1zsI3wxzKDTIkfkVgUqI=');
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    height: 70vh;
+    margin: auto;
+}
+
+#contactForm{
+    opacity: 0.8;
+    position: absolute;
+    right: 0;
+    background: #b9bccc;
+    padding-left: 14px;
+    padding-top: 25px;
+    width: 53%;
+    height: 70%;
+}
+
+.container {
+    max-width: 98%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #0078d7;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    margin: 10px 0;
+}
+.contact, .social {
+    margin-top: 20px;
+}
+.social a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #0078d7;
+}
+.social a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}

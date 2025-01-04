@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Trip Planner</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+        }
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.istockphoto.com/id/1341935363/photo/paris-aerial-panorama-with-river-seine-and-eiffel-tower-france-romantic-summer-holidays.jpg?s=612x612&w=0&k=20&c=yQHfH3DbXACPqsNQyvoiLiwc6TJ2juyW2_bh50ExzoI=') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #212529;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #f8f9fa;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #495057;
+        }
+        section {
+            padding: 40px 20px;
+        }
+
+        .content{
+            margin-left: 12px;
+        }
+
+        .landContainer{
+            display: flex;
+        }
+
+        .card {
+            background-color: #ffffff;
+            margin: 20px auto;
+            padding: 25px;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .card p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #495057;
+        }
+        .card ul {
+            margin: 15px 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .card ul li {
+            margin-bottom: 10px;
+        }
+
+        .card img {
+            width: 450px;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        footer {
+            background-color: #212529;
+            color: #f8f9fa;
+            text-align: center;
+            padding: 15px 0;
+        }
+        @media only screen and (max-width: 500px){
+            .landContainer{
+                flex-direction: column;
+            }
+            header h1{
+                font-size: 1.7rem;
+            }
+            .card h2{
+                font-size: 1.5rem;
+            }
+            .card img{
+                width: 300px;
+            }
+            nav a{
+                font-size: 1em;
+                margin: 0px 5px;
+                padding: 0px 0px;
+            }
+            header{
+                height: 131px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Plan Your Perfect Paris Getaway</h1>
+        <p>Experience the beauty and charm of the City of Light</p>
+    </header>
+
+    <nav>
+        <a href="#hotels">Hotels</a>
+        <a href="#landmarks">Landmarks</a>
+        <a href="#transport">Transportation</a>
+        <a href="#tips">Travel Tips</a>
+    </nav>
+
+    <section id="hotels" class="card">
+        <h2>Hotels in Paris</h2>
+        <div class="landContainer">
+            <div class="img">
+                <img src="https://media.istockphoto.com/id/1488517840/photo/smiling-receptionist-behind-the-hotel-counter-attending-to-a-female-guest-the-concierge-gives.webp?a=1&b=1&s=612x612&w=0&k=20&c=KXh3D5j4Adq-8AfpOQ6aKqpzqXmLti9lGRsOP53UfSM=">
+            </div>
+            <div class="content">
+                <p>Explore the best places to stay in Paris, whether you're looking for luxury, boutique charm, or budget-friendly options.</p>
+                <ul>
+                     <li><strong>Luxury:</strong> The Ritz Paris, Shangri-La Hotel</li>
+                     <li><strong>Boutique:</strong> Hotel Providence, Le Narcisse Blanc</li>
+                     <li><strong>Budget:</strong> Ibis Paris Montmartre, Generator Paris</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="landmarks" class="card">
+        <h2>Famous Landmarks</h2>
+        <div class="landContainer">
+            <div class="content">
+                <p>Discover iconic attractions that make Paris unforgettable:</p>
+                <ul>
+                    <li><strong>Eiffel Tower:</strong> The symbol of Paris, offering stunning city views.</li>
+                    <li><strong>Louvre Museum:</strong> Home to the Mona Lisa and countless masterpieces.</li>
+                    <li><strong>Notre-Dame Cathedral:</strong> A Gothic architectural marvel.</li>
+                    <li><strong>Palace of Versailles:</strong> A majestic royal residence with breathtaking gardens.</li>
+                </ul>
+            </div>
+            <div class="img">
+                <img src="https://media.istockphoto.com/id/1905277204/photo/les-invalides-in-paris-france.jpg?s=612x612&w=0&k=20&c=HWxneJq3z7EBmiYoP9k5ipcEOnIqCCr7LbnIcHdPzSI=" alt="Eiffel Tower in Paris">
+            </div>
+        </div>
+    </section>
+
+    <section id="transport" class="card">
+        <div class="landContainer">
+            <div class="img">
+                <img src="https://media.istockphoto.com/id/544599414/photo/cheerful-woman-on-the-phone-subway-train-on-background.jpg?s=612x612&w=0&k=20&c=IlOuxtW4DG7Jki3u00Lo4zRYCxbAGkSzANXvPE9EIaI=" alt="Paris Metro train">
+            </div>
+            <div class="content">
+                <h2>Getting Around Paris</h2>
+                <p>Efficient and convenient ways to explore Paris:</p>
+                 <ul>
+                    <li><strong>Metro:</strong> The fastest way to navigate the city.</li>
+                     <li><strong>Bus:</strong> Enjoy scenic routes through Paris neighborhoods.</li>
+                     <li><strong>Bike Rentals:</strong> Explore at your own pace with Vélib' Métropole.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="tips" class="card">
+        <h2>Travel Tips</h2>
+        <p>Maximize your Paris experience:</p>
+        <ul>
+            <li>Buy skip-the-line tickets for major attractions.</li>
+            <li>Use a Paris Museum Pass to save time and money.</li>
+            <li>Visit during off-peak seasons for fewer crowds.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Paris Trip Planner | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

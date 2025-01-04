@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Trip Planner</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+        }
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.istockphoto.com/id/1134908837/photo/pedestrians-crossing-the-street-at-shibuya-crossing-with-motion-blur.jpg?s=612x612&w=0&k=20&c=rO-48DWQogQVkIqlhZQs9r1qAkKsd56fL476sYJK5pQ=') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #212529;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #f8f9fa;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #495057;
+        }
+        section {
+            padding: 40px 20px;
+        }
+
+        .content{
+            margin-left: 12px;
+        }
+
+        .landContainer{
+            display: flex;
+        }
+
+        .card {
+            background-color: #ffffff;
+            margin: 20px auto;
+            padding: 25px;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .card p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #495057;
+        }
+        .card ul {
+            margin: 15px 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .card ul li {
+            margin-bottom: 10px;
+        }
+
+        .card img {
+            width: 450px;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        footer {
+            background-color: #212529;
+            color: #f8f9fa;
+            text-align: center;
+            padding: 15px 0;
+        }
+        @media only screen and (max-width: 500px){
+            .landContainer{
+                flex-direction: column;
+            }
+            header h1{
+                font-size: 1.7rem;
+            }
+            .card h2{
+                font-size: 1.5rem;
+            }
+            .card img{
+                width: 300px;
+            }
+            nav a{
+                font-size: 1em;
+                margin: 0px 5px;
+                padding: 0px 0px;
+            }
+            header{
+                height: 131px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Plan Your Perfect Tokyo Getaway</h1>
+        <p>Experience the blend of tradition and innovation in the heart of Japan</p>
+    </header>
+
+    <nav>
+        <a href="#hotels">Hotels</a>
+        <a href="#landmarks">Landmarks</a>
+        <a href="#transport">Transportation</a>
+        <a href="#tips">Travel Tips</a>
+    </nav>
+
+    <section id="hotels" class="card">
+        <h2>Hotels in Tokyo</h2>
+        <div class="landContainer">
+            <div class="img">
+                <img src="https://media.istockphoto.com/id/1316115903/photo/skyscrapers-of-the-shinjuku-city-skyline-shinjuku-tokyo-japan.jpg?s=612x612&w=0&k=20&c=gxCNfftGT0gRgOrC7pEMssFqpyXayNQO9aoRMiE3KB4=">
+            </div>
+            <div class="content">
+                <p>Explore the best places to stay in Tokyo, whether you're looking for luxury, boutique charm, or budget-friendly options.</p>
+                <ul>
+                     <li><strong>Luxury:</strong> The Peninsula Tokyo, Park Hyatt Tokyo</li>
+                     <li><strong>Boutique:</strong> Claska, Hotel Niwa Tokyo</li>
+                     <li><strong>Budget:</strong> Khaosan Tokyo, Sakura Hostel Asakusa</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="landmarks" class="card">
+        <h2>Famous Landmarks</h2>
+        <div class="landContainer">
+            <div class="content">
+                <p>Discover iconic attractions that make Tokyo unforgettable:</p>
+                <ul>
+                    <li><strong>Tokyo Tower:</strong> A symbol of Tokyo with panoramic city views.</li>
+                    <li><strong>Meiji Shrine:</strong> A serene Shinto shrine surrounded by forest.</li>
+                    <li><strong>Asakusa Temple:</strong> Tokyo's oldest temple, home to the iconic Kaminarimon gate.</li>
+                    <li><strong>Shibuya Crossing:</strong> The world's busiest pedestrian crossing, a true Tokyo experience.</li>
+                </ul>
+            </div>
+            <div class="img">
+                <img src="https://media.istockphoto.com/id/483288090/photo/tokyo-skyline-from-the-airplane.jpg?s=612x612&w=0&k=20&c=SFtT330otZoVDW28FtSQG6IyTvFyEUr66wPatSR36yw=" alt="Tokyo Tower">
+            </div>
+        </div>
+    </section>
+
+    <section id="transport" class="card">
+        <div class="landContainer">
+            <div class="img">
+                <img src="https://media.istockphoto.com/id/872289050/photo/speed-train-in-tokyo.jpg?s=612x612&w=0&k=20&c=ROwWGZUyj3fRgFjmqjKLWe1EwkhkFxxsrgLY6kDkLy8=" alt="Tokyo Metro">
+            </div>
+            <div class="content">
+                <h2>Getting Around Tokyo</h2>
+                <p>Efficient and convenient ways to explore Tokyo:</p>
+                 <ul>
+                    <li><strong>Metro:</strong> The Tokyo Metro is the fastest and most convenient way to navigate the city.</li>
+                     <li><strong>JR Trains:</strong> The Japan Rail system connects Tokyo to neighboring cities and regions.</li>
+                     <li><strong>Taxis:</strong> A comfortable option, though it can be expensive in comparison to trains and buses.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="tips" class="card">
+        <h2>Travel Tips</h2>
+        <p>Maximize your Tokyo experience:</p>
+        <ul>
+            <li>Get a Suica card for easy access to trains, buses, and vending machines.</li>
+            <li>Learn basic Japanese phrases like "Arigatou" (thank you) and "Sumimasen" (excuse me).</li>
+            <li>Visit during spring or fall for the most pleasant weather and beautiful scenery.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tokyo Trip Planner | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>Explore the World with Us!</h1>
+            <p>Your next adventure is just a click away</p>
+            <a href="#packages" class="btn">View Packages</a>
+        </div>
+    </header>
+
+    <nav class="navBar active">
+        <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Destinations Section -->
+        <section id="destinations">
+            <h2>Popular Destinations</h2>
+            <div class="grid">
+                <a target="_blank" href="paris/paris.html">
+                <div class="card">
+                    <img src="https://media.timeout.com/images/106181719/750/562/image.jpg" alt="Destination" class="img">
+                    <h3>Paris, France</h3>
+                    <p>Experience the magic of the Eiffel Tower and the charm of Parisian streets.</p>
+                    <div class="location">
+                        <a target="_blank" href="https://www.google.com/maps/place/Paris/data=!4m2!3m1!1s0x47e66e1f06e2b70f:0x40b82c3688c9460?sa=X&ved=1t:155783&ictx=111">You can see the location</a>
+                    </div>
+                </div>
+            </a>
+                <a target="_blank" href="maldives/maldives.html">
+                <div class="card">
+                    <img src="https://media.cnn.com/api/v1/images/stellar/prod/230516112548-01-crossroads-maldives-aerial.jpg?c=original&q=h_447,c_fill" alt="Destination" class="img">
+                    <h3>Maldives</h3>
+                    <p>Relax on pristine beaches and enjoy luxury resorts. Make your life a life long memory for yourself</p>
+                    <div class="location">
+                        <a target="_blank" href="https://www.google.com/maps/place/maldives/data=!4m2!3m1!1s0x24b599bfaafb7bbd:0x414509e181956289?sa=X&ved=1t:155783&ictx=111">You can see the location</a>
+                    </div>
+                </div>
+                </a>
+                <a target="_blank" href="tokyo/tokyo.htm">
+                <div class="card">
+                    <img src="https://media.nomadicmatt.com/2024/tokyothings.jpeg" alt="Destination" class="img">
+                    <h3>Tokyo, Japan</h3>
+                    <p>Explore futuristic cities and traditional temples, historical places and many more.</p>
+                    <div class="location">
+                        <a target="_blank" href="https://www.google.com/maps/place/tokyo/data=!4m2!3m1!1s0x605d1b87f02e57e7:0x2e01618b22571b89?sa=X&ved=1t:155783&ictx=111">You can see the location</a>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section id="packages">
+            <h2>Travel Packages</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Student Trip</h3>
+                    <p>10 Days / 5 Nights in Bali</p>
+                    <p>Starting at $800 per person</p>
+                    <button class="btn">Book Now</button>
+                </div>
+                <div class="card">
+                    <h3>Romantic Getaway</h3>
+                    <p>3 Days / 2 Nights in Bali</p>
+                    <p>Starting at $1000 per person</p>
+                    <button class="btn">Book Now</button>
+                </div>
+                <div class="card">
+                    <h3>Family Adventure</h3>
+                    <p>5 Days / 4 Nights in Disney World</p>
+                    <p>Starting at $1200 per person</p>
+                    <button class="btn">Book Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial active">
+                    <p>"This is the best service I have ever used! Highly recommend it to everyone."</p>
+                    <div class="author">- John Doe</div>
+                </div>
+                <div class="testimonial">
+                    <p>"Amazing experience! Customer support was outstanding and very helpful."</p>
+                    <div class="author">- Jane Smith</div>
+                </div>
+                <div class="testimonial">
+                    <p>"I have seen great results in just a few weeks. Totally worth it!"</p>
+                    <div class="author">- Emily Davis</div>
+                </div>
+                <div class="controls">
+                    <button id="prev">&#9664; Prev</button>
+                    <button id="next">Next &#9654;</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <form id="contactForm">
+                <h2>Contact Us</h2>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required class="input">
+
+                <label for="email"><p class="label">Email</p></label>
+                <input type="email" id="email" name="email" required class="input">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required class="input textarea"></textarea>
+
+                <button type="submit" class="input" id="sbtm">Send</button>
+                <p id="formResponse"></p>
+            </form>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about">
+            <div class="container">
+                <h2>Popular Destinations</h2>
+                <ul>
+                    <li><strong>Bali:</strong> Beaches, temples, and tropical paradise.</li>
+                    <li><strong>Paris:</strong> The romance of the Eiffel Tower and world-class cuisine.</li>
+                    <li><strong>Kyoto:</strong> Traditional tea houses and cherry blossoms.</li>
+                </ul>
+        
+                <div class="contact">
+                    <h2>Contact Us</h2>
+                    <p>
+                        📧 Email: <a href="mailto:sundeepkumar1740@gmail.com">sundeepkumar1740@gmail.com</a><br>
+                        📞 Phone: <a href="tel:+03260702241">03260702241</a>
+                    </p>
+                </div>
+        
+                <div class="social">
+                    <h2>Follow Us on Social Media</h2>
+                    <p>
+                        📸 <a href="#">Instagram</a> | 🌍 <a href="#">Facebook</a> | 🐦 <a href="#">Twitter</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Travel Agency. All Rights Reserved.</p>
+    </footer>
+
+
+
+    <script src="script/script.js" defer></script>
+    <script src="script/responsive.js"></script>
+    <script src="https://kit.fontawesome.com/7ae84f8337.js" crossorigin="anonymous"></script>
+</body>
+</html>
