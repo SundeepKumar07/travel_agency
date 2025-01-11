@@ -59,6 +59,13 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+a{
+    text-decoration: none;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
 
 h2 {
     margin: 2rem 0 1rem;
